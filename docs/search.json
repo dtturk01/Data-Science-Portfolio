@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "cleansing.html",
+    "href": "cleansing.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "cleansing.html#title-2-header",
+    "href": "cleansing.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project1.html",
+    "href": "Cleansing_Exploration/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project2.html",
+    "href": "Cleansing_Exploration/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Exploration/project3.html",
+    "href": "Cleansing_Exploration/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Projects/project1.html",
+    "href": "Cleansing_Projects/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Projects/project2.html",
+    "href": "Cleansing_Projects/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Cleansing_Projects/project3.html",
+    "href": "Cleansing_Projects/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Competition/project1.html",
+    "href": "Competition/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Competition/project2.html",
+    "href": "Competition/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Competition/project3.html",
+    "href": "Competition/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "competition.html",
+    "href": "competition.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "competition.html#title-2-header",
+    "href": "competition.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html",
+    "href": "exploration.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "exploration.html#title-2-header",
+    "href": "exploration.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Full_Stack/project1.html",
+    "href": "Full_Stack/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Full_Stack/project2.html",
+    "href": "Full_Stack/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "full_stack.html",
+    "href": "full_stack.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "full_stack.html#title-2-header",
+    "href": "full_stack.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Housing Telework Data/Housing-Telework.html",
+    "href": "Housing Telework Data/Housing-Telework.html",
+    "title": "Housing Telework",
+    "section": "",
+    "text": "Code\nlibrary(tidyverse)\nlibrary(readr)\nlibrary(readxl)\nlibrary(lubridate)\nlibrary(geofacet)\nlibrary(USAboundaries)\nlibrary(maps)\nlibrary(pander)\n\n\nRemote work, or telework, became much more common following the COVID-19 pandemic, changing how many Americans perform their jobs. As remote work opportunities expanded, workers gained greater flexibility in where they choose to live, potentially influencing housing demand and property values.\nThis project investigates the question:\nDo states with higher telework rates tend to have higher housing values?\nTelework data was obtained from the U.S. Bureau of Labor Statistics. State level telework data was only available for 2023 and 2024, while national telework data were available monthly from late 2022 through 2026. Housing data was obtained from Zillow’s Zillow Home Value Index (ZHVI). The ZHVI represents the typical home value within a region and is calculated using homes in the middle third of the housing market. This analysis uses Zillow’s seasonally adjusted state-level data.\n\n\nCode\n#telework data\ntelework_year_national &lt;- read_excel(\"../data/telework-monthly-year.xlsx\", skip = 14)\ntelework_state_2023 &lt;- read_excel(\"../data/state-telework-table-2023.xlsx\", skip = 4) #numbers in thousands\ntelework_state_2024 &lt;- read_excel(\"../data/state-telework-table-2024.xlsx\", skip = 4) #numbers in thousands\n\n#housing data\nraw_national &lt;- read_csv(\"https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_month.csv?t=1784659874\")\nseasonal_state &lt;- read_csv(\"https://files.zillowstatic.com/research/public_csvs/zhvi/State_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv?t=1784659874\")\nseasonal_national &lt;- read_csv(\"https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv?t=1784659874\")\n\n\n\n\nCode\ntelework_2023_clean &lt;- telework_state_2023 %&gt;%\n  select(\n    state = State,\n    total_working = \"Total persons \\r\\nat work1\",\n    telework_total = \"Persons who teleworked or worked at home for pay, \\r\\nTotal\",\n    telework_some = \"Persons who teleworked or worked at home for pay, Teleworked some hours2\",\n    telework_all = \"Persons who teleworked or worked at home for pay, Teleworked all hours\",\n    telework_none = \"Persons who did not telework or work at home for pay\",\n    telework_rate = \"Percent distribution, Persons who teleworked or worked at home for pay, \\r\\nTotal\",\n    telework_rate_some = \"Percent distribution, Persons who teleworked or worked at home for pay, Teleworked some hours2\",\n    telework_rate_all = \"Percent distribution, Persons who teleworked or worked at home for pay, Teleworked all hours\",\n    telework_rate_none = \"Percent distribution, Persons who did not telework or work at home for pay\"\n  ) %&gt;% \n  mutate(year = 2023)\n\ntelework_2024_clean &lt;- telework_state_2024 %&gt;%\n  select(\n    state = State,\n    total_working = \"Total persons \\r\\nat work1\",\n    telework_total = \"Persons who teleworked or worked at home for pay, \\r\\nTotal\",\n    telework_some = \"Persons who teleworked or worked at home for pay, Teleworked some hours2\",\n    telework_all = \"Persons who teleworked or worked at home for pay, Teleworked all hours\",\n    telework_none = \"Persons who did not telework or work at home for pay\",\n    telework_rate = \"Percent distribution, Persons who teleworked or worked at home for pay, \\r\\nTotal\",\n    telework_rate_some = \"Percent distribution, Persons who teleworked or worked at home for pay, Teleworked some hours2\",\n    telework_rate_all = \"Percent distribution, Persons who teleworked or worked at home for pay, Teleworked all hours\",\n    telework_rate_none = \"Percent distribution, Persons who did not telework or work at home for pay\"\n  ) %&gt;% \n  mutate(year = 2024)\n\n\ntelework_clean &lt;- bind_rows(\n  telework_2023_clean,\n  telework_2024_clean) %&gt;% \n  filter(!(state %in% c(\"1 Data refer to persons who worked during the survey reference week regardless of telework status. Excludes employed persons absent from work the entire week due to holidays, vacation, illness, or other reasons.\",\n                        \"2 Includes persons who teleworked for some but not all of their work hours.\",\n                        \"End of table.\",\n                        \"Total, all states\")))\n\n\n\n\nCode\ntelework_national &lt;- telework_year_national %&gt;% \n  pivot_longer(\n    cols = Jan:Dec,\n    names_to = \"month\",\n    values_to = \"rate\") %&gt;%\n  filter(!is.na(rate)) %&gt;% \n  mutate(\n    date = paste(Year, month, \"1\"),\n    date = parse_date_time(date, orders = \"Y b d\")\n  ) %&gt;% \n  rename(year = Year)\n\n\n\n\nCode\nstate_housing &lt;- seasonal_state %&gt;%\n  select(\n    state = RegionName,\n    starts_with(\"20\")\n  ) %&gt;%\n  pivot_longer(\n    cols = starts_with(\"20\"),\n    names_to = \"date\",\n    values_to = \"value\"\n  ) %&gt;%\n  mutate(\n    date = ymd(date),\n    year = year(date)\n  ) %&gt;% \n  filter(year %in% c(2023, 2024))\n\n\n\n\nCode\nnational_housing &lt;- seasonal_national %&gt;%\n  filter(RegionName == \"United States\") %&gt;% \n  select(\n    state = RegionName,\n    starts_with(\"20\")\n  ) %&gt;%\n  pivot_longer(\n    cols = starts_with(\"20\"),\n    names_to = \"date\",\n    values_to = \"home_value\"\n  ) %&gt;%\n  mutate(\n    date = ymd(date),\n    year = year(date),\n    month = month(date, label = TRUE)) %&gt;% \n    filter(year &gt;= 2022)\n\n\n\n\nCode\nstate_housing_yearly &lt;- state_housing %&gt;%\n  group_by(state, year) %&gt;%\n  summarise(\n    avg_home_value = mean(value),\n    .groups = \"drop\"\n  )\n\ncombined_state &lt;- telework_clean %&gt;%\n  filter(state != \"Total, all states\") %&gt;%\n  left_join(\n    state_housing_yearly,\n    by = c(\"state\", \"year\")\n  ) %&gt;% \n  drop_na()\n\n\n\n\nCode\ncombined_national &lt;- telework_national %&gt;% \n  left_join(national_housing, by = c(\"year\", \"month\")) %&gt;% \n  select(-date.x) %&gt;% \n  rename(date = date.y)\n\n\n\n\nCode\nggplot(telework_national, aes(x = date, y = rate)) +\n  geom_line() +\n  geom_point() +\n  labs(\n    title = \"National Telework Rate From Late 2022 to Mid 2026\",\n    x = \"Year\",\n    y = \"Telework Rate (%)\"\n  ) +\n  theme_minimal()\n\n\n\n\n\nTelework rates increased from approximately 18% in late 2022 to between 22% and 24% after 2024. Between 2024 and 2026, telework rates generally remained between approximately 21% and 24%, suggesting that remote work has stabilized as a significant component of the labor market even after most immediate effects of the pandemic had subsided.\n\n\nCode\nggplot(combined_state, aes(x = telework_rate, y = avg_home_value, color = factor(year))) +\n  geom_point() +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  labs(\n    title = \"Yearly State Home Value Index and Telework Rate\",\n    x = \"Telework Rate (%)\",\n    y = \"Average Home Value ($)\",\n    color = \"Year\"\n  ) +\n  theme_minimal()\n\n\n\n\n\nThe graph reveals a positive relationship between telework rates and average housing values. States with lower telework rates generally tend to have lower home values, while states with higher telework rates tend to have higher home values. Despite variation among states, both regression lines slope upward, indicating a consistent positive association across both years. The similarity of the regression lines suggests that the relationship remained relatively stable from 2023 to 2024. States with greater adoption of remote work tend to be states with more expensive housing markets.\nOne possible explanation is that states with larger concentrations of professional, technical, financial, and information sector jobs often provide more opportunities for remote work. These occupations also tend to offer higher salaries, which can contribute to higher demand for housing and ultimately higher home values.\nCompanies also offer a hybrid work schedule where employees work remotely but still have to come to the office at least part of the time. Hybrid work arrangements may influence the housing market differently than fully remote work arrangements. Workers who only commute occasionally may have greater flexibility in choosing where to live than workers who must be physically present every day, while still remaining within commuting distance of their workplace.\n\n\nCode\ntelework_type &lt;- combined_state %&gt;%\n  select(\n    state,\n    year,\n    avg_home_value,\n    telework_rate_some,\n    telework_rate_all\n  ) %&gt;%\n  pivot_longer(\n    cols = c(telework_rate_some, telework_rate_all),\n    names_to = \"telework_type\",\n    values_to = \"telework_rate\"\n  ) %&gt;%\n  mutate(\n    telework_type = recode(\n      telework_type,\n      telework_rate_some = \"Hybrid Telework\",\n      telework_rate_all = \"Fully Remote\"\n    )\n  )\n\n\n\n\nCode\nggplot(\n  telework_type,aes(x = telework_rate, y = avg_home_value, color = factor(year))) +\n  geom_point(alpha = 0.75, size = 2.5) +\n  geom_smooth(method = \"lm\", se = FALSE) +\n  facet_wrap(~ telework_type, scales = \"free_x\") +\n  labs(\n    title = \"State Hybrid and Fully Remote Telework vs Home Value\",\n    x = \"Telework Rate (%)\",\n    y = \"Average Home Value ($)\",\n    color = \"Year\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(size = 11),\n    strip.text = element_text(face = \"bold\"),\n    axis.title = element_text(face = \"bold\")\n  )\n\n\n\n\n\nTo better understand whether the relationship between remote work and housing values differs by work arrangement, separate graphs and regression models were estimated for workers who teleworked some hours (hybrid) and workers who teleworked all hours (fully remote). For this project we will use the significance level \\(\\alpha = 0.05\\).\n\n\nCode\nmodel_hybrid &lt;- lm(\n  avg_home_value ~ telework_rate_some,\n  data = combined_state\n)\n\nsummary(model_hybrid) %&gt;% pander()\n\n\n\n\n\n\n\n\n\n\n\n\n \nEstimate\nStd. Error\nt value\nPr(&gt;|t|)\n\n\n\n\n(Intercept)\n215280\n28286\n7.611\n1.546e-11\n\n\ntelework_rate_some\n15500\n2482\n6.246\n1.033e-08\n\n\n\n\nFitting linear model: avg_home_value ~ telework_rate_some\n\n\n\n\n\n\n\n\nObservations\nResidual Std. Error\n\\(R^2\\)\nAdjusted \\(R^2\\)\n\n\n\n\n102\n124952\n0.2806\n0.2734\n\n\n\n\n\nFor hybrid workers, the regression model estimated that each additional percentage point of hybrid telework was associated with an increase of approximately $15,500 in the average home value. The model produced an \\(R^2\\) of 0.281, indicating that hybrid work explained about 28.1% of the variation in state housing values. This relationship was statistically significant (\\(p = 1.033e^{-8}\\)).\n\n\nCode\nmodel_remote &lt;- lm(\n  avg_home_value ~ telework_rate_all,\n  data = combined_state\n)\nsummary(model_remote) %&gt;% pander()\n\n\n\n\n\n\n\n\n\n\n\n\n \nEstimate\nStd. Error\nt value\nPr(&gt;|t|)\n\n\n\n\n(Intercept)\n139270\n38304\n3.636\n0.0004398\n\n\ntelework_rate_all\n23700\n3662\n6.472\n3.626e-09\n\n\n\n\nFitting linear model: avg_home_value ~ telework_rate_all\n\n\n\n\n\n\n\n\nObservations\nResidual Std. Error\n\\(R^2\\)\nAdjusted \\(R^2\\)\n\n\n\n\n102\n123680\n0.2952\n0.2882\n\n\n\n\n\nFor fully remote workers, the estimated effect was larger. Each additional percentage point of fully remote telework was associated with an increase of approximately $23,700 in the average home value. The model produced an \\(R^2\\) of 0.295, indicating that fully remote work explained about 29.5% of the variation in housing values. This relationship was also statistically significant (\\(3.626e^{-9}\\)).\nAlthough both forms of remote work are positively associated with housing values, the fully remote model produced a somewhat larger coefficient and slightly higher explanatory power. This suggests that states with larger populations of fully remote workers may have somewhat stronger connections to expensive housing markets than states where remote work primarily occurs in hybrid arrangements.\nHowever, the difference between the two models is relatively modest. Overall, the results indicate that both hybrid and fully remote work are associated with higher housing values, reinforcing the broader finding that remote-work adoption tends to be greater in states with more expensive housing markets.\n\n\nCode\nstates_map &lt;- map_data(\"state\")\n\ntelework_map &lt;- combined_state %&gt;%\n  filter(state != \"District of Columbia\") %&gt;%\n  group_by(state) %&gt;% \n  summarise(avg_tele_rate = mean(telework_rate)) %&gt;% \n  mutate(region = tolower(state))\n\n\nmap_df &lt;- states_map %&gt;%\n  left_join(telework_map, by = \"region\")\n\nggplot(map_df, aes(long, lat, group = group, fill = avg_tele_rate)) +\n  geom_polygon(color = \"white\", linewidth = 0.2) +\n  coord_fixed(1.3) +\n  scale_fill_viridis_c(option = \"plasma\", name = \"Telework Rate (%)\") +\n  labs(\n    title = \"Average Telework Rate (%) Between 2023 and 2024\"\n  ) +\n  theme_void() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    legend.position = \"right\"\n  )\n\n\n\n\n\nThe telework map shows that remote work adoption is not evenly distributed across the United States. States in parts of the West and Northeast tend to have higher average telework rates, while several southern states show lower telework rates. Differences in industry composition may help explain this pattern, since states with more professional, technical, finance, or information sector jobs may have more occupations that can be done remotely.\n\n\nCode\nhousing_map &lt;- combined_state %&gt;%\n  filter(state != \"District of Columbia\") %&gt;% \n  group_by(state) %&gt;% \n  summarise(avg_value = mean(avg_home_value)) %&gt;% \n  mutate(region = tolower(state))\n\nhousing_map_df &lt;- states_map %&gt;%\n  left_join(housing_map, by = \"region\")\n\nggplot(housing_map_df, aes(long, lat, group = group, fill = avg_value)) +\n  geom_polygon(color = \"white\", linewidth = 0.2) +\n  coord_fixed(1.3) +\n  scale_fill_viridis_c(\n    option = \"plasma\",\n    labels = scales::dollar_format(),\n    name = \"Average Home Value\"\n  ) +\n  labs(\n    title = \"Average Home Value by State Between 2023 and 2024\"\n  ) +\n  theme_void() +\n  theme(\n    plot.title = element_text(face = \"bold\", size = 16),\n    plot.subtitle = element_text(size = 11),\n    legend.position = \"right\"\n  )\n\n\n\n\n\nThe home value map shows that housing values also vary substantially by location. Higher average home values are concentrated in several western and northeastern states, while many central and southern states have lower average home values.\nComparing the two maps supports the relationship shown in the scatterplot. States with higher average telework rates often appear in regions that also have higher average home values, especially in parts of the West and Northeast. However, the maps also show that the relationship is not perfect. Some states may have relatively high telework rates without the highest home values, and some high value housing markets may reflect other factors beyond remote work.\nThe results of this analysis suggest that states with higher telework rates tend to have higher housing values. Regression analyses indicates a moderate positive relationship between telework rate and average home values. States with higher rates of hybrid and fully remote work generally exhibit higher housing values than states with lower rates of telework.\nHowever, the findings should be interpreted as evidence of association rather than causation. While telework explains some of the variation in average home values across states, many other factors likely contribute to housing market differences, including household income, housing supply, population growth, and regional economic conditions.\nOverall, the analysis provides evidence that remote work is meaningfully associated with housing markets and highlights how changing workplace arrangements may influence where people choose to live.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Housing Telework Data/temp.html",
+    "href": "Housing Telework Data/temp.html",
+    "title": "temp",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "index.html#title-2-header",
+    "href": "index.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "Machine_Learning/project1.html",
+    "href": "Machine_Learning/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Machine_Learning/project2.html",
+    "href": "Machine_Learning/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Machine_Learning/project3.html",
+    "href": "Machine_Learning/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "ml.html",
+    "href": "ml.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "ml.html#title-2-header",
+    "href": "ml.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "Physicist, Mathematician, Cambridge professor.\n\nisaac@applesdofall.org | My wikipedia page\n\n\n\nStanding on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples.\n\n\n\n\n1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow\n\n\n\n\n2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France\n\n\n\n\n\n\n1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001\n\n\n\n\n1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+  },
+  {
+    "objectID": "resume.html#currently",
+    "href": "resume.html#currently",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "Standing on the shoulders of giants\n\n\nLaws of motion, gravitation, minting coins, disliking Robert Hooke\n\n\n\nCooling, power series, optics, alchemy, planetary motions, apples."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "1654-1660 The King’s School, Grantham.\nJune 1661 - now Trinity College, Cambridge\n\nSizar\n\n1667 - death Trinity College, Cambridge\n\nFellow"
+  },
+  {
+    "objectID": "resume.html#awards",
+    "href": "resume.html#awards",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "2012 President, Royal Society, London, UK\nAssociate, French Academy of Science, Paris, France"
+  },
+  {
+    "objectID": "resume.html#publications",
+    "href": "resume.html#publications",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "1669 Newton Sir I, De analysi per æquationes numero terminorum infinitas.\n1669 Lectiones opticæ.\netc. etc. etc.\n\n\n\n2012 Infinitesimal calculus for solutions to physics problems, SMBC patent 001"
+  },
+  {
+    "objectID": "resume.html#occupation",
+    "href": "resume.html#occupation",
+    "title": "Isaac Newtons’s CV",
+    "section": "",
+    "text": "1600 Royal Mint, London\n\nWarden\nMinted coins\n\n1600 Lucasian professor of Mathematics, Cambridge University"
+  },
+  {
+    "objectID": "Story_Telling/project1.html",
+    "href": "Story_Telling/project1.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Story_Telling/project2.html",
+    "href": "Story_Telling/project2.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "Story_Telling/project3.html",
+    "href": "Story_Telling/project3.html",
+    "title": "Client Report - [Insert Project Title]",
+    "section": "",
+    "text": "Paste in a template\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "story_telling.html",
+    "href": "story_telling.html",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  },
+  {
+    "objectID": "story_telling.html#title-2-header",
+    "href": "story_telling.html#title-2-header",
+    "title": "about me",
+    "section": "",
+    "text": "MarkDown Basics"
+  }
+]
