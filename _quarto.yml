@@ -25,7 +25,7 @@ website:
       - text: "My Resume"
         file: resume.qmd
       - text: "Housing Telework Data"
-        file: Housing-Telework.qmd
+        file: Housing Telework Data/Housing-Telework.qmd
   
   # learn more about navication here https://quarto.org/docs/websites/website-navigation.html
   # comment out any of the sections below to turn off the sidebar
@@ -36,8 +36,9 @@ website:
       background: light
       contents:
         - text: "Housing Telework Data"
-          file: Housing-Telework.qmd
-  
+          file: Housing Telework Data/Housing-Telework.qmd
+
+
 
   
 format:  
